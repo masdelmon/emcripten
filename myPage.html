@@ -1,0 +1,7 @@
+<script src="helloworld.js"></script>
+<script>
+  Module.onRuntimeInitialized = _ => {
+    const main = Module.cwrap('main');
+    console.log(main);
+  };
+</script>
